@@ -2,8 +2,8 @@ Title
 ===
 Abstract:xxx
 ## Papar Information
-- con un ciclo stampo tutte le immagini dentro items-wrapper.
-- prendo tutti gli elementi con la classe item e li salvo in un array.
+- salvare tutte le informazioni in un data()
+- stampo le immagini 
 - al primo elemento tolgo la classe hide
 - al click di bottom 
   - aggiungo la classe hide all'elemento corrente

@@ -19,16 +19,22 @@
           <div class="slider">
 
             <div class="items-Wrapper">
-              <img :src="images[counter]" alt="">
-              <!-- <div class="text">
-                <h3 class="title">ss</h3>
-                <p>sssssss</p>
-              </div> -->
+             <img class="poster" :src="images[counter]" alt="">
+              <div class="text">
+                <h3 class="title">{{ description[counter].title  }}</h3>
+                <p> {{ description[counter].text }}</p>
+              </div>
             </div>
 
             <div class="thumbnails">
 
                 <div class="thumbs">
+                  <img 
+                  v-for="(image, index) in images"
+                  @click="counter = index"
+                  :class="{'active': index === counter}"
+                  :src="image" 
+                  >
                   
                 </div>
         
