@@ -16,7 +16,7 @@
 
         <div class="container">
 
-          <div class="slider">
+          <div @mouseenter="stopSlide" @mouseleave="startSlide"  class="slider">
 
             <div class="items-Wrapper">
              <img class="poster" :src="images[counter]" alt="">
