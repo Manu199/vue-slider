@@ -84,12 +84,12 @@
   z-index: 999;
 }
 
-.btn-arrow.top{
+.btn-arrow.prev{
   top: 10px;
 
 }
 
-.btn-arrow.bottom{
+.btn-arrow.next{
   bottom: 10px;
 }
 

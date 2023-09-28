@@ -19,6 +19,7 @@
           <div class="slider">
 
             <div class="items-Wrapper">
+              <img :src="images[counter]" alt="">
               <!-- <div class="text">
                 <h3 class="title">ss</h3>
                 <p>sssssss</p>
@@ -31,8 +32,12 @@
                   
                 </div>
         
-                <div class="btn-arrow top"><i class="fa-solid fa-chevron-up top"></i></div>
-                <div class="btn-arrow bottom"><i class="fa-solid fa-chevron-down bottom"></i></div>
+                <div @click="nextPrev(false)" class="btn-arrow prev">
+                  <i class="fa-solid fa-chevron-up top"></i>
+                </div>
+                <div @click="nextPrev(true)" class="btn-arrow next">
+                  <i class="fa-solid fa-chevron-down bottom"></i>
+                </div>
               
             </div>
             <!-- <button class="btn-invert">BUTTON</button> -->
